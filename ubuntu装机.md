@@ -6,13 +6,13 @@
 
    ​		使用windows自带的磁盘管理工具或者第三方工具如DiskGenius（[DiskGenius下载链接][1]），可以通过压缩没有使用的硬盘空间，为Ubuntu系统留出足够的未分配硬盘空间。这里我为Ubuntu20.04准备了250G的未分配空间。参考：[Ubuntu空间分配参考][2]。
 
-   <img src="C:\Users\金刀利刃\Desktop\Ubuntu装机\pics\1.png" alt="1" style="zoom:80%;" />
+   <img src="pics/1.png" alt="1" style="zoom:80%;" />
 
 2. #### **准备系统盘**
 
    ​		从ubuntu官网（[Ubuntu Releases][3]）或者其他镜像源下载 ubuntu 20.04版本的iso镜像文件，准备一块8G以上内存的闲置U盘，使用rufus（[rufus下载链接][4]）或其他U盘写入工具下载的iso镜像文件写入U盘中。参考：[Ubuntu引导盘][5]。
 
-   <img src="pics\2.png" alt="image-20240913164747885" style="zoom:50%;" />
+   <img src="pics/2.png" alt="image-20240913164747885" style="zoom:50%;" />
 
 3. #### **重启计算机安装ubuntu**
 
@@ -22,7 +22,7 @@
 
    ​		安装过程中选择安装类型：其他。进入分区页面，对未分配的磁盘空间进行分区，常用的分区包括：系统引导分区/boot(或者/efi) (300-500M)、交换分区/swap(1到2倍内存空间)、根挂载区/(软件安装位置，考虑到CUDA、pytorch等的安装建议大于50G)、用户分区/home(存储数据，也是越大越好)。分区完成后选择boot loader安装位置为系统引导分区/boot(或者/efi)的磁盘位置。之后完成ubuntu安装：[ubuntu分区方案 ][7]。
 
-<img src="pics\3.png" alt="image-20240913171644824" style="zoom: 50%;" />
+<img src="pics/3.png" alt="image-20240913171644824" style="zoom: 50%;" />
 
 5. #### **保证网络连接**
 
@@ -60,7 +60,7 @@
    >
    > - 2. Nvidia官网上（[下载 NVIDIA 官方驱动 | NVIDIA][11]）根据显卡类型筛选并需要选择的驱动版本：
    >
-   > - <img src="pics\4.png" alt="image-20240913175710808" style="zoom:50%;" />
+   > - <img src="pics/4.png" alt="image-20240913175710808" style="zoom:50%;" />
    >
    > - 3. 安装驱动：
    >
@@ -89,7 +89,7 @@
 
    ​		这里<u>安装CUDA对 Ubuntu系统的 / 分区大小有要求，空间不能太小否则无法安装且无法删除其他文件，这里最终只能重装系统解决</u>。从官网（[CUDA Toolkit Archive | NVIDIA Developer][12]）下载指定版本的.run文件（此处为CUDA 12.2），其中CUDA版本应当满足驱动版本的要求，具体版本要求见参考：[cuda和显卡驱动对应版本关系][13]。
 
-   ![image-20240913223037705](pics\5.png)
+   ![image-20240913223037705](pics/5.png)
 
    >```python
    ># 获取指定的CUDA12.2的.run文件
@@ -126,7 +126,7 @@
 
     ​		注册且登录Nvidia账号，从官网下载满足CUDA需求的cuDNN版本（[cuDNN Archive | NVIDIA Developer][15]）。
 
-    ![image-20240913223553135](pics\6.png)
+    ![image-20240913223553135](pics/6.png)
 
     >```python
     ># 1.解压cuDNN的.tar.xz文件
@@ -164,7 +164,7 @@
 
     ​		这里下载似乎有限速，安装缓慢，1天没有装完，暂时没找到Ubuntu下快速安装的方法：
 
-    <img src="pics\7.png" alt="e3625d49-c6cf-489c-b7f4-926f3de6e9a2" style="zoom:67%;" />
+    <img src="pics/7.png" alt="e3625d49-c6cf-489c-b7f4-926f3de6e9a2" style="zoom:67%;" />
 
 
 
