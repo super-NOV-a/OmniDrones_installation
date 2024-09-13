@@ -6,7 +6,7 @@
 
    ​		使用windows自带的磁盘管理工具或者第三方工具如DiskGenius（[DiskGenius下载链接][1]），可以通过压缩没有使用的硬盘空间，为Ubuntu系统留出足够的未分配硬盘空间。这里我为Ubuntu20.04准备了250G的未分配空间。参考：[Ubuntu空间分配参考][2]。
 
-   ![image-20240913164118832](pics\1.png)
+   <img src="C:\Users\金刀利刃\Desktop\Ubuntu装机\pics\1.png" alt="1" style="zoom:80%;" />
 
 2. #### **准备系统盘**
 
