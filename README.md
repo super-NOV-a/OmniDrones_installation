@@ -1,1 +1,0 @@
-2024/9/13：Lyy用于记录在Windows上安装Ubuntu双系统，OmniDrones环境的简单流程以及遇到的问题与解决方法。目前卡在Isaac Sim安装上

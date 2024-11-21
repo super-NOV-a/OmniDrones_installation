@@ -176,7 +176,7 @@
 [6]:https://blog.csdn.net/qq_42313591/article/details/136007211	"U盘启动系统设置参考"
 [7]:https://blog.csdn.net/qq_35724582/article/details/125729026	"ubuntu分区方案"
 [8]:https://www.cnblogs.com/FaithALL/p/13268058.html	"Ubuntu20.04拨号上网"
-[9]:https://zhuanlan.zhihu.com/p/679429000	"Ubuntu中Clash配置与可视化"
+[9]:https://zhuanlan.zhihu.com/p/2852384493	"Ubuntu中Clash配置与可视化"
 [10]:https://zhuanlan.zhihu.com/p/688305108	".run文件安装nvidia显卡驱动"
 [11]:https://www.nvidia.cn/drivers/lookup/	"下载 NVIDIA 官方驱动 | NVIDIA"
 [12]:https://developer.nvidia.com/cuda-toolkit-archive	"CUDA Toolkit Archive | NVIDIA Developer"
