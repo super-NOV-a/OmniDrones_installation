@@ -166,6 +166,8 @@
 
     <img src="pics/7.png" alt="e3625d49-c6cf-489c-b7f4-926f3de6e9a2" style="zoom:67%;" />
 
+          这里可以参考[21] todo 修改引用格式
+
 
 
 [1]:https://www.diskgenius.com/	"DiskGenius下载链接"
@@ -188,3 +190,4 @@
 [18]:https://blog.csdn.net/marsjin/article/details/139806830	"ubuntu安装Conda"
 [19]:https://www.nvidia.com/en-us/omniverse/download/	"Download Omniverse Launcher"
 [20]:https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html	"Omniverse IsaacSim 官方文档"
+[21]:https://blog.csdn.net/sebrina111007/article/details/143231385	"包含Isaac Sim下载太慢解决方法"
