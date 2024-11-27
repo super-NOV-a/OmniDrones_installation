@@ -92,7 +92,7 @@
    ![image-20240913223037705](pics/5.png)
 
    >```python
-   ># 获取指定的CUDA12.2的.run文件
+   ># 获取指定的CUDA12.2的.run文件 这里推荐使用12.1
    >wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda_12.2.0_535.54.03_linux.run 
    >```
 
@@ -103,7 +103,7 @@
    >按照参考这里需要关闭图像界面重启再安装，我没有关闭图像界面也可以顺利安装
    >
    >```python
-   ># 安装下载的驱动
+   ># 安装下载的驱动 
    >sudo sh cuda_12.2.0_535.54.03_linux.run
    >```
    >
