@@ -92,7 +92,7 @@
    ![image-20240913223037705](pics/5.png)
 
    >```python
-   ># 获取指定的CUDA12.2的.run文件 这里推荐使用12.1
+   ># 获取指定的CUDA12.2的.run文件 这里推荐使用12.1!!!!!若使用12.1或其他版本需要从官网找到run的下载步骤
    >wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda_12.2.0_535.54.03_linux.run 
    >```
 
@@ -103,7 +103,11 @@
    >按照参考这里需要关闭图像界面重启再安装，我没有关闭图像界面也可以顺利安装
    >
    >```python
-   ># 安装下载的驱动 
+   ># 安装下载的驱动之前需要更新现有包，依次执行：
+   >sudo apt update
+   >sudo apt upgrade
+   >sudo apt install build-essential dkms
+   >sudo apt install linux-headers-$(uname -r)
    >sudo sh cuda_12.2.0_535.54.03_linux.run
    >```
    >
@@ -130,9 +134,9 @@
 
     >```python
     ># 1.解压cuDNN的.tar.xz文件
-    ># 2.复制到CUDA路径下并给予读权限
+    ># 2.复制到CUDA路径下并给予读权限，/usr/local/cuda路径是软链接，如果存在多个cuda版本 可以指定为具体版本路径如/usr/local/cuda-12.1
     >sudo cp cuda/include/* -R /usr/local/cuda/include/ 
-    >sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib/ 
+    >sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/ 
     >sudo chmod a+r /usr/local/cuda/include/cudnn.h 
     >sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
     ># 3.测试，返回头文件的定义信息表示安装成功
