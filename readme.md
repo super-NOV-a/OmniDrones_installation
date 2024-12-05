@@ -40,7 +40,15 @@
 
    ​		参考：[Ubuntu中Clash配置与可视化][9]。
 
-7. #### **手动安装指定版本的Nvidia驱动**
+7. #### **使用apt安装（推荐） 或者 手动安装指定版本的Nvidia驱动（手动安装一直无法启动isaac sim）**
+
+         使用 apt 安装驱动： 在 Ubuntu 上，NVIDIA 驱动通常可以通过包管理器安装。例如：
+   
+   > - ```python
+   >   sudo apt update
+   >   sudo apt install nvidia-driver-535
+   >   # 这里 nvidia-driver-535 是你当前要安装的驱动版本。你可以根据需要安装不同版本的驱动（例如 nvidia-driver-530）。
+   >   ```
 
    ​		我这里从官网选择了535.183版本，下载前需要先禁用nouveau驱动，否则安装驱动会发生冲突，参考：[.run文件安装nvidia显卡驱动][10]。
 
@@ -85,7 +93,7 @@
    >   sudo reboot
    >   ```
 
-8. #### **下载CUDA.run**
+9. #### **下载CUDA.run**
 
    ​		这里<u>安装CUDA对 Ubuntu系统的 / 分区大小有要求，空间不能太小否则无法安装且无法删除其他文件，这里最终只能重装系统解决</u>。从官网（[CUDA Toolkit Archive | NVIDIA Developer][12]）下载指定版本的.run文件（此处为CUDA 12.2），其中CUDA版本应当满足驱动版本的要求，具体版本要求见参考：[cuda和显卡驱动对应版本关系][13]。
 
@@ -96,7 +104,7 @@
    >wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda_12.2.0_535.54.03_linux.run 
    >```
 
-9. #### **手动安装.run安装包的CUDA**
+10. #### **手动安装.run安装包的CUDA**
 
    ​		之所以选择.run文件是由于，手动安装可以保证原本已经安装的驱动仍按存在。否则<u>使用.deb安装时原本的驱动会被卸载而CUDA自带的驱动包安装不上</u>，安装.run的步骤见参考[.run文件安装12.2版本的cuda][14]。
 
@@ -126,7 +134,7 @@
    >nvcc -V
    >```
 
-10. #### **安装cuDNN**
+11. #### **安装cuDNN**
 
     ​		注册且登录Nvidia账号，从官网下载满足CUDA需求的cuDNN版本（[cuDNN Archive | NVIDIA Developer][15]）。
 
@@ -143,7 +151,7 @@
     >cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
     >```
 
-11. #### **安装 Anaconda 与 VS code**
+12. #### **安装 Anaconda 与 VS code**
 
     ​		分别从 [Download Anaconda][16] 和 [Visual Studio Code][17] 中下载并安装。安装完成后配置conda环境 [ubuntu安装Conda][18]：
 
@@ -156,15 +164,15 @@
     > source ~/.bashrc
     > ```
 
-12. #### **从Nvidia官网链接注册并下载Omniverse平台**
+13. #### **从Nvidia官网链接注册并下载Omniverse平台**
 
     ​		官网链接与安装步骤：[Download Omniverse Launcher][19]。
 
-13. #### **按照官网步骤安装 Omniverse Launcher、Cache、Nucleus**
+14. #### **按照官网步骤安装 Omniverse Launcher、Cache、Nucleus**
 
     ​		官网链接中有安装步骤：[Omniverse IsaacSim 官方文档][20]。其中<u>Nvidia Omniverse Launcher登录时遇到网络问题，关闭防火墙后reboot解决</u>。
 
-14. #### **从 Omniverse Launcher 中安装 Isaac Sim** 
+15. #### **从 Omniverse Launcher 中安装 Isaac Sim** 
 
     ​		这里下载似乎有限速，安装缓慢，1天没有装完，暂时没找到Ubuntu下快速安装的方法：
 
