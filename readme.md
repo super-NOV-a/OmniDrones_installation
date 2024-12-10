@@ -174,13 +174,15 @@
 
 15. #### **从 Omniverse Launcher 中安装 Isaac Sim** 
 
-    ​		这里下载似乎有限速，安装缓慢，1天没有装完，暂时没找到Ubuntu下快速安装的方法：
+    ​		这里下载似乎有限速，安装缓慢，1天没有装完：
 
     <img src="pics/7.png" alt="e3625d49-c6cf-489c-b7f4-926f3de6e9a2" style="zoom:67%;" />
 
-          这里可以参考[21]https://blog.csdn.net/qq_42864343/article/details/131728784 todo 修改引用格式
-    ​		这里参考的应该是 https://blog.csdn.net/sebrina111007/article/details/143231385
+    ​		这里可以参考的是 https://blog.csdn.net/sebrina111007/article/details/143231385
+    ​		使用下载器直接下载log中指定的下载地址，然后移动到原本需要下载的文件位置并修改名称即可。
 
+17. #### （可选）Ubuntu 上 typora 安装激活
+    ​		参考链接：https://blog.csdn.net/weixin_65657501/article/details/142788747
 
 
 [1]:https://www.diskgenius.com/	"DiskGenius下载链接"
